@@ -1,0 +1,15 @@
+server {
+  server_name irekua.files;
+
+  listen 80;
+  listen [::]:80;
+
+  root /var/www/irekua;
+
+  location /media {
+  }
+
+  location /static {
+    autoindex on;
+  }
+}
